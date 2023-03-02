@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-
+using UnityEngine.SocialPlatforms.Impl;
 
 public class juegoAzar : MonoBehaviour
-
-
 {
+    int jugador1;
+    int jugador2;
+    int jugador3;
+    string opciones;
+    bool opcionfinal = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +22,11 @@ public class juegoAzar : MonoBehaviour
     void Update()
     {
         
+        
+    }
+
+    public void BotonReiniciar()
+    {
+        SceneManager.LoadScene(0);
     }
 }
